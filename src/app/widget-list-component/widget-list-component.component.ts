@@ -10,7 +10,7 @@ import {WidgetServiceClient} from '../services/WidgetServiceClient';
 })
 export class WidgetListComponentComponent implements OnInit {
 
-  widgets=[];
+  widgets = [];
   widgetId;
   topicId;
   lessonId;
@@ -31,7 +31,8 @@ export class WidgetListComponentComponent implements OnInit {
   }
 
   loadWidget(topicId) {
-    this.service.findWidgetsForTopic(topicId).then(res => this.widgets = res);
+    this.service.findWidgetsForTopic(topicId).then(res => this.widgets = res)
+      .then(res => this.widgets = this.widgets.sort((w1, w2) => (w1.listind < w2.listind ) ? -1 : (w1.listind > w2.listind ) ? 1 : 0))
   }
 
 
