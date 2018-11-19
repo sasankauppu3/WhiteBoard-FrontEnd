@@ -1,3 +1,14 @@
-<p>
-  widget-list-component works!
-</p>
+<div *ngIf="widgets.length>0" class="card">
+  <div *ngIf="widgets.length>0" class="card-body">
+  <br/>
+  <ul class="widget-list">
+    <li class="p-2" *ngFor="let widget of widgets" [ngSwitch]="widget.type">
+      <app-heading-widget *ngSwitchCase="'HEADING'" [widget] = "widget"></app-heading-widget>
+      <app-paragraph-widget *ngSwitchCase="'PARAGRAPH'" [widget] = "widget"></app-paragraph-widget>
+      <app-link-widget *ngSwitchCase="'LINK'" [widget] = "widget"></app-link-widget>
+      <app-list-widget *ngSwitchCase="'LIST'" [widget] = "widget"></app-list-widget>
+      <app-image-widget *ngSwitchCase="'IMAGE'" [widget] = "widget"></app-image-widget>
+    </li>
+  </ul>
+</div>
+</div>

@@ -1,3 +1,206 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
+
+.course-editor-body
+{
+  margin-top: 10vh;
+  background: #464B4F;
+  min-height: 90vh;
+}
+
+.course-editor-navbar
+{
+  height: 10vh;
+}
+
+.module-body
+{
+  background: white;
+}
+
+#newmodule-textbox{
+  width: 80%;
+  border-width: 0.09rem;
+  border-radius: 0.25rem;
+}
+
+#newlesson-textbox,#newtopic-textbox
+{
+  border-width: 0.09rem;
+  border-radius: 0.25rem;
+}
+.module-titles,.topic-titles,.lesson-titles{
+  border-color: #651f1f;
+  border-radius: 0.25rem;
+  border-width: 0.09rem;
+}
+
+.lesson-titles,.topic-titles,.module-titles{
+  border-color: blue;
+}
+
+.lesson-titles:disabled,.topic-titles:disabled,.module-titles:disabled{
+  border-color: transparent;
+}
+
+.lesson-titles,.topic-titles,.module-titles
+{
+  background: transparent;
+  color: white;
+  display: inline;
+}
+
+.module-cell,.lesson-cell,.topic-cell
+{
+  color:white;
+  background: #353A3F;
+  display: inline;
+
+}
+
+.module-cell-header
+{
+  color:white;
+  background: #343A40;
+  display: inline;
+}
+.module-cell:hover,.lesson-cell:hover,.topic-cell:hover,.lesson-titles:hover,.topic-titles:hover,.module-titles:hover
+{
+  cursor: pointer;
+}
+
+.module-cell.active,.lesson-cell.active,.topic-cell.active
+{
+  background: #7A7A7A !important;
+  border-color: transparent !important;
+}
+
+.module-cell-buttons
+{
+  display: inline;
+  float:  right;
+}
+
+.editor-plus{
+  color: white;
+}
+
+.topic-plus{
+  color: #353A3F;
+}
+
+.btn-danger{
+  float: right;
+}
+
+.course-cross
+{
+  color: white!important;
+}
+
+.sort-up-button,.sort-down-button
+{
+  color: #F7C244;
+}
+
+.sort-up-button:hover,.sort-down-button:hover
+{
+  cursor: pointer;
+  color: #dba63c;
+}
+
+.widget-list
+{
+  list-style: none;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.hide
+{
+  visibility: hidden;
+}
+
+.generic-navbar{
+  height: 12vh;
+}
+
+.generic-body{
+  margin-top: 20vh;
+}
+
+.card-title, .card-text{
+  overflow: hidden;
+}
+
+.course-grid
+{
+  margin-top: 5%;
+}
+
+.del-button
+{
+  float: right;
+}
+
+

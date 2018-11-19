@@ -14,6 +14,11 @@ import {LessonServiceClient} from './services/LessonServiceClient';
 import {TopicServiceClient} from './services/TopicServiceClient';
 import {WidgetServiceClient} from './services/WidgetServiceClient';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
+import { HeadingWidgetComponent } from './heading-widget/heading-widget.component';
+import { ImageWidgetComponent } from './image-widget/image-widget.component';
+import { LinkWidgetComponent } from './link-widget/link-widget.component';
+import { ListWidgetComponent } from './list-widget/list-widget.component';
+import { ParagraphWidgetComponent } from './paragraph-widget/paragraph-widget.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
     LessonTabsComponentComponent,
     TopicPillsComponentComponent,
     WidgetListComponentComponent,
-    CourseViewerComponent
+    CourseViewerComponent,
+    HeadingWidgetComponent,
+    ImageWidgetComponent,
+    LinkWidgetComponent,
+    ListWidgetComponent,
+    ParagraphWidgetComponent
   ],
   imports: [
     BrowserModule,
