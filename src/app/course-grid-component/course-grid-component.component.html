@@ -1,21 +1,36 @@
-<h2>WhiteBoard</h2>
+<div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary navbar-custom tg-bar">
+    <a class="navbar-brand" href="#">WhiteBoard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+
+<div class="container course-grid">
 <div class="row">
   <div *ngFor="let course of courses" class="col-sm-3 mb-3">
     <div class="card">
-      <div class="card-body">
+      <div class="card-header">
         <h5 class="card-title">{{course.title}}</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a routerLink = '/course/{{course.id}}' class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+        <a routerLink = '/course/{{course.id}}' class="btn btn-primary">Browse Course</a>
       </div>
     </div>
   </div>
   <div *ngFor="let number of [0,1,2,3,4,6,7,8]" class="col-sm-3 mb-3">
     <div class="card">
-      <div class="card-body">
+      <div class="card-header">
         <h5 class="card-title">Sample Course</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <a href="#" class="btn btn-primary">Browse Course</a>
       </div>
     </div>
   </div>
+</div>
 </div>

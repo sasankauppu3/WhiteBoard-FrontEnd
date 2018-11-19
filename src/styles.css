@@ -188,3 +188,19 @@ input:checked + .slider:before {
 .generic-body{
   margin-top: 20vh;
 }
+
+.card-title, .card-text{
+  overflow: hidden;
+}
+
+.course-grid
+{
+  margin-top: 5%;
+}
+
+.del-button
+{
+  float: right;
+}
+
+
