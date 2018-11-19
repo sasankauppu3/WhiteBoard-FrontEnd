@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-list-widget',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-widget.component.css']
 })
 export class ListWidgetComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  @Input() widget;
+  constructor() {
   }
 
+  htmlList;
+  ngOnInit() {
+    const list = this.widget.items ? this.widget.items.split(',') : [];
+    this.htmlList = list;
+
+    }
 }

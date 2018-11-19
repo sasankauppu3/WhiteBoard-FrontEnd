@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-image-widget',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image-widget.component.css']
 })
 export class ImageWidgetComponent implements OnInit {
-
+  @Input() widget;
   constructor() { }
 
   ngOnInit() {

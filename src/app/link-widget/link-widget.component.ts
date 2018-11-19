@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-link-widget',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./link-widget.component.css']
 })
 export class LinkWidgetComponent implements OnInit {
-
+  @Input() widget;
   constructor() { }
 
   ngOnInit() {

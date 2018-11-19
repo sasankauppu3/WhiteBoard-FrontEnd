@@ -1,3 +1,2 @@
-<p>
-  list-widget works!
-</p>
+<div *ngIf="widget.orderedFlag"><ol><li *ngFor="let item of htmlList">{{item}}</li></ol></div>
+<div *ngIf="!widget.orderedFlag"><ul><li *ngFor="let item of htmlList">{{item}}</li></ul></div>
