@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {CourseServiceClient} from '../services/CourseServiceClient';
 
 @Component({
   selector: 'app-course-viewer',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseViewerComponent implements OnInit {
 
-  constructor() { }
+  course;
+
+  constructor(private service: CourseServiceClient, private route: ActivatedRoute) {
+    this.route.params.subscribe(params => this.loadCourse(params['courseId']));
+  }
+
+  loadCourse(courseId) {
+    this.service.findCourseById(courseId).then(res => this.course = res);
+  }
 
   ngOnInit() {
   }

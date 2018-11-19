@@ -1,3 +1,20 @@
-<p>
-  module-list-component works!
-</p>
+<div class="row course-editor-body">
+  <div class="col-2">
+    <ul class="list-group mt-2">
+      <li class="list-group-item module-cell-header">
+        <h5>Modules</h5>
+      </li>
+      <li routerLink="/course/{{courseId}}/module/{{module.id}}" class="list-group-item module-cell" *ngFor="let module of modules">
+
+        <a >{{module.title}}</a>
+
+      </li>
+
+    </ul>
+  </div>
+  <div class="col-10 module-body">
+    <app-lesson-tabs-component></app-lesson-tabs-component>
+    <app-topic-pills-component></app-topic-pills-component>
+    <app-widget-list-component></app-widget-list-component>
+  </div>
+</div>
