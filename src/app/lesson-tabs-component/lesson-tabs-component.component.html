@@ -1,6 +1,6 @@
 <div class="row p-2">
   <ul class="nav nav-pills col-md-9">
-    <li class="nav-link nav-item topic-cell col-md-2 m-1"  *ngFor="let lesson of lessons" >
+    <li routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lesson.id}}" class="nav-link nav-item topic-cell col-md-2 m-1" [ngClass]="{'active':lesson.id==lessonId}"  *ngFor="let lesson of lessons" >
     <input class="topic-titles" disabled value={{lesson.title}}/>
     </li>
   </ul>

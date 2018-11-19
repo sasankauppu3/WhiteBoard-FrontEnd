@@ -4,7 +4,7 @@
       <li class="list-group-item module-cell-header">
         <h5>Modules</h5>
       </li>
-      <li routerLink="/course/{{courseId}}/module/{{module.id}}" class="list-group-item module-cell" *ngFor="let module of modules">
+      <li routerLink="/course/{{courseId}}/module/{{module.id}}" class="list-group-item module-cell" [ngClass]="{'active':module.id==moduleId}" *ngFor="let module of modules">
 
         <a >{{module.title}}</a>
 

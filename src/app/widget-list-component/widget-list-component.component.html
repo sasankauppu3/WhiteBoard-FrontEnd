@@ -1,3 +1,13 @@
-<p>
-  widget-list-component works!
-</p>
+<div>
+  <br/>
+  <ul class="widget-list">
+
+    {widgetList.map((widget, index) =>
+    <li className="p-2" key={index} >
+      <WidgetPreview widget={widget} widgetArray={widgetArray}/>
+    </li>
+    )}
+
+  </ul>
+
+</div>

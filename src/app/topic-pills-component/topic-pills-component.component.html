@@ -1,3 +1,7 @@
-<p>
-  topic-pills-component works!
-</p>
+<div class="row p-2">
+  <ul class="nav nav-pills col-md-9">
+    <li routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lessonId}}/topic/{{topic.id}}" class="nav-link nav-item topic-cell col-md-2 m-1" [ngClass]="{'active':topic.id==topicId}"  *ngFor="let topic of topics" >
+      <input class="topic-titles" disabled value={{topic.title}}/>
+    </li>
+  </ul>
+</div>
