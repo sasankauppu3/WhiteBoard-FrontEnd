@@ -1,5 +1,8 @@
 # WebdevF18VeeraAngular
 
+Implemented a web app for instructors to publish different courses and lecture materials allowing students to access them and upload homework using MEAN stack with Java Backend deployed on Heroku.
+
+
 The Backend repository for this project is available at : https://github.com/sasankauppu3/WhiteBoard-Backend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
